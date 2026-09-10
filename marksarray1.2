@@ -1,0 +1,22 @@
+public class MarksArray {
+   public MarksArray() {
+   }
+
+   public static void main(String[] var0) {
+      int[] var1 = new int[]{78, 91, 45, 66, 88};
+      int var2 = 0;
+
+      for(int var3 = 0; var3 < var1.length; ++var3) {
+         var2 += var1[var3];
+         if (var1[var3] >= 50) {
+            System.out.println(var1[var3] + " Pass");
+         } else {
+            System.out.println(var1[var3] + " Fail");
+         }
+      }
+
+      double var5 = (double)var2 / (double)var1.length;
+      System.out.println("Total = " + var2);
+      System.out.println("Average = " + var5);
+   }
+}
